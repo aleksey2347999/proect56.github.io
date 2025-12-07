@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeLab - Веб-разработка с нуля</title>
+    
+    <!-- Иконки Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400&display=swap" rel="stylesheet">
+    
+    <!-- CSS файл -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22 fill=%22%233b82f6%22>💻</text></svg>">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="#home" class="logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <span>CodeLab</span>
+                </a>
+
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#home" class="nav-link active">Главная</a></li>
+                    <li><a href="#features" class="nav-link">Возможности</a></li>
+                    <li><a href="#install" class="nav-link">Установка</a></li>
+                    <li><a href="#timeline" class="nav-link">История</a></li>
+                    <li><a href="#video" class="nav-link">Видео</a></li>
+                    <li><a href="#faq" class="nav-link">FAQ</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Веб-разработка с нуля</h1>
+                <div class="typing-text" id="typingText"></div>
+                <p>Профессиональный курс по созданию современных веб-сайтов. От основ до продвинутых техник.</p>
+                
+                <div class="btn-group">
+                    <a href="#install" class="btn">
+                        <i class="fas fa-rocket"></i> Начать сейчас
+                    </a>
+                    <a href="#video" class="btn btn-outline">
+                        <i class="fas fa-video"></i> Смотреть урок
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section id="features">
+        <div class="container">
+            <h2 class="section-title">Возможности</h2>
+            <p class="subtitle">Все что нужно для профессиональной разработки</p>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Быстрый старт</h3>
+                    <p>Создайте первый сайт за 15 минут с готовыми шаблонами и примерами кода.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Чистый код</h3>
+                    <p>Изучите лучшие практики написания чистого, поддерживаемого и эффективного кода.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Адаптивный дизайн</h3>
+                    <p>Создавайте сайты, которые идеально выглядят на всех устройствах и размерах экранов.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3>Готовый хостинг</h3>
+                    <p>Разместите свой сайт на GitHub Pages бесплатно. Инструкция включена.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Installation -->
+    <section id="install" class="section-dark">
+        <div class="container">
+            <h2 class="section-title">Установка</h2>
+            <p class="subtitle">Простая настройка среды разработки</p>
+
+            <div class="install-steps">
+                <div class="install-step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Установите VS Code</h3>
+                        <p>Скачайте редактор кода с официального сайта:</p>
+                        <div class="code-block">
+                            <span class="code-comment"># Windows (через Winget)</span><br>
+                            <span class="code-keyword">winget</span> <span class="code-function">install</span> Microsoft.VisualStudioCode<br><br>
+                            <span class="code-comment"># macOS (через Homebrew)</span><br>
+                            <span class="code-keyword">brew</span> <span class="code-function">install</span> --cask visual-studio-code
+                        </div>
+                    </div>
+                </div>
+
+                <div class="install-step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Установите расширения</h3>
+                        <p>Добавьте основные расширения для веб-разработки:</p>
+                        <div class="code-block">
+                            <span class="code-comment"># Основные расширения</span><br>
+                            Live Server<br>
+                            Prettier<br>
+                            Auto Rename Tag<br>
+                            ESLint<br>
+                            GitLens
+                        </div>
+                    </div>
+                </div>
+
+                <div class="install-step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Создайте первый проект</h3>
+                        <p>Структура папок для нового проекта:</p>
+                        <div class="code-block">
+                            <span class="code-string">my-project/</span><br>
+                            ├── <span class="code-string">index.html</span><br>
+                            ├── <span class="code-string">style.css</span><br>
+                            ├── <span class="code-string">script.js</span><br>
+                            ├── <span class="code-string">images/</span><br>
+                            └── <span class="code-string">README.md</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline -->
+    <section id="timeline">
+        <div class="container">
+            <h2 class="section-title">История технологий</h2>
+            <p class="subtitle">Путь развития веб-технологий</p>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-year">1995</div>
+                    <div class="timeline-content">
+                        <h3>Рождение JavaScript</h3>
+                        <p>Брендан Эйх создал JavaScript за 10 дней для браузера Netscape Navigator.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-year">1998</div>
+                    <div class="timeline-content">
+                        <h3>CSS Level 2</h3>
+                        <p>Появилась возможность позиционирования элементов и медиа-запросов.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-year">2009</div>
+                    <div class="timeline-content">
+                        <h3>Node.js</h3>
+                        <p>Райан Даль создал Node.js, позволяя выполнять JavaScript на сервере.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-year">2015</div>
+                    <div class="timeline-content">
+                        <h3>ES6 / ES2015</h3>
+                        <p>Крупнейшее обновление JavaScript с классами, промисами и модулями.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Section -->
+    <section id="video" class="section-dark">
+        <div class="container">
+            <h2 class="section-title">Видеоурок</h2>
+            <p class="subtitle">Создание сайта за 15 минут</p>
+
+            <div class="video-wrapper">
+                <iframe 
+                    src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+                    title="Создание сайта за 15 минут" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq">
+        <div class="container">
+            <h2 class="section-title">Частые вопросы</h2>
+            <p class="subtitle">Ответы на популярные вопросы</p>
+
+            <div class="faq-container">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>С чего начать изучение веб-разработки?</span>
+                        <i class="fas fa-plus faq-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Начните с основ HTML, CSS и JavaScript. Создайте несколько простых проектов, прежде чем переходить к фреймворкам.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Нужно ли знать математику?</span>
+                        <i class="fas fa-plus faq-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Для большинства веб-проектов достаточно базовой математики. Глубокая математика нужна только для специфических задач.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Сколько времени нужно для обучения?</span>
+                        <i class="fas fa-plus faq-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Для освоения основ нужно 3-6 месяцев. Для уровня junior разработчика — около года регулярного обучения.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resources -->
+    <section class="section-dark">
+        <div class="container">
+            <h2 class="section-title">Ресурсы</h2>
+            <p class="subtitle">Материалы для скачивания</p>
+
+            <div class="resources-grid">
+                <div class="resource-card">
+                    <div class="resource-icon">
+                        <i class="fas fa-file-code"></i>
+                    </div>
+                    <h3>Шаблон HTML</h3>
+                    <p>Готовый шаблон для быстрого старта</p>
+                    <button class="btn btn-outline" onclick="downloadFile('html')">
+                        <i class="fas fa-download"></i> Скачать
+                    </button>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>CSS Библиотека</h3>
+                    <p>Набор готовых стилей и компонентов</p>
+                    <button class="btn btn-outline" onclick="downloadFile('css')">
+                        <i class="fas fa-download"></i> Скачать
+                    </button>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-icon">
+                        <i class="fas fa-list-check"></i>
+                    </div>
+                    <h3>Чек-лист</h3>
+                    <p>Пошаговый план создания сайта</p>
+                    <button class="btn btn-outline" onclick="downloadFile('checklist')">
+                        <i class="fas fa-download"></i> Скачать
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>CodeLab</h3>
+                    <p>Профессиональное обучение веб-разработке. Создание современных сайтов с нуля.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-telegram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Навигация</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home"><i class="fas fa-chevron-right"></i> Главная</a></li>
+                        <li><a href="#features"><i class="fas fa-chevron-right"></i> Возможности</a></li>
+                        <li><a href="#install"><i class="fas fa-chevron-right"></i> Установка</a></li>
+                        <li><a href="#video"><i class="fas fa-chevron-right"></i> Видеоурок</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Ресурсы</h3>
+                    <ul class="footer-links">
+                        <li><a href="#" onclick="downloadFile('html')"><i class="fas fa-download"></i> HTML шаблон</a></li>
+                        <li><a href="#" onclick="downloadFile('css')"><i class="fas fa-download"></i> CSS библиотека</a></li>
+                        <li><a href="#" onclick="downloadFile('checklist')"><i class="fas fa-download"></i> Чек-лист</a></li>
+                        <li><a href="https://code.visualstudio.com" target="_blank"><i class="fas fa-external-link-alt"></i> VS Code</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 CodeLab. Все права защищены.</p>
+                <p>Создано для размещения на GitHub Pages</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript файл -->
+    <script src="script.js"></script>
+</body>
+</html>
